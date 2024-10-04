@@ -1,0 +1,25 @@
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 901px) {
+  body {
+    background-color: darkcyan;
+  }
+}
+
+header {
+    background-color: blue;
+}
