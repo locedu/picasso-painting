@@ -1,25 +1,112 @@
-
-/* MOBILE */
+/* ***** MOBILE ***** */
 @media only screen and (max-width: 480px) {
   body {
     background-color: lightcoral;
   }
-}
 
-/* TABLET */
-@media only screen and (min-width: 481px) and (max-width: 900px) {
-  body {
-    background-color: lightgreen;
+  .main-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
-/* DESKTOP */
-@media only screen and (min-width: 901px) {
+/* ***** TABLET ***** */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body {
+    background-color: rgb(48, 50, 48);
+  }
+
+  .main-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* max-width: 750px; */
+    width: 500px;
+  }
+}
+.img-spacer {
+  /* display: inline-table; */
+}
+
+/* ***** DESKTOP ***** */
+@media only screen and (min-width: 1024px) {
   body {
     background-color: darkcyan;
   }
+
+  /*   
+  main > img {
+    border-radius: 0px 0px 15px 0px;
+  } */
+
+  .main-container {
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    /* align-items:flex-start; */
+    box-sizing: content-box;
+  }
+  .form-container {
+    background-color: black;
+    /* width: 500px !important; */
+  }
+
+  .img-spacer {
+    /* width: 40%;
+    all: initial; */
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+  header {
+    display: block;
+    overflow: hidden;
+    /* width: 20%; */
+  }
+}
+
+/* COMMON */
+.main-container {
+  margin: 8vh auto;
+  padding: 2em;
+  
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 15px 0px 15px 0px;
 }
 
 header {
-    background-color: blue;
+  background-color: black;
+  /* background-image: url("img/van-01.png"); */
+  /* background-repeat: space; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /* margin: 1em; */
+  border-radius: 15px 0px 0px 0px;
+  padding: 2em;
+}
+
+header > h1 {
+  /* padding: 1em 1em 0 1em; */
+  color: aliceblue;
+}
+header > h2 {
+  color: rgb(81, 81, 82);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-weight: 200;
+  font-style: italic;
+  /* padding: 1em; */
+  margin-top: .5em;
+}
+
+header > h4 {
+  margin-top: 1em;
+  color: aliceblue;
+}
+
+.form-container {
+  background-color: white;
+  padding: 1em;
 }
