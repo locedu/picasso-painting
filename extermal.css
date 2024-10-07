@@ -25,7 +25,7 @@
     width: 500px;
   }
 }
-.img-spacer {
+#section-image {
   /* display: inline-table; */
 }
 
@@ -46,19 +46,12 @@
     /* align-items:flex-start; */
     box-sizing: content-box;
   }
-  .form-container {
+  #section-form {
     background-color: black;
     /* width: 500px !important; */
   }
 
-  .img-spacer {
-    /* width: 40%;
-    all: initial; */
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-  }
-  header {
+  #section-header {
     display: block;
     overflow: hidden;
     /* width: 20%; */
@@ -69,22 +62,20 @@
 .main-container {
   margin: 8vh auto;
   padding: 2em;
-  
+  box-sizing: border-box;
   display: flex;
   background-color: aliceblue;
   border-radius: 15px 0px 15px 0px;
 }
 
-header {
+#section-header {
+  box-sizing: border-box;
   background-color: black;
-  /* background-image: url("img/van-01.png"); */
-  /* background-repeat: space; */
-  background-repeat: no-repeat;
-  background-size: 100%;
-
-  /* margin: 1em; */
   border-radius: 15px 0px 0px 0px;
   padding: 2em;
+  align-self: start;
+  /* width: inherit; */
+  /* align-self:flex-start; */
 }
 
 header > h1 {
@@ -93,12 +84,12 @@ header > h1 {
 }
 header > h2 {
   color: rgb(81, 81, 82);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: xx-large;
   font-weight: 200;
   font-style: italic;
   /* padding: 1em; */
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 header > h4 {
@@ -106,7 +97,23 @@ header > h4 {
   color: aliceblue;
 }
 
-.form-container {
+#section-form {
   background-color: white;
   padding: 1em;
+  border-radius: 0px 0px 15px 0px;
+}
+
+#section-form > h6 {
+  color: rgb(158, 158, 253);
+}
+
+#section-image {
+  overflow: hidden;
+  background-image: url("img/picasso-blonde.png");
+  height: 70vmax;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#section-copy {
+  margin: 1em;
 }
