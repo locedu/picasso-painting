@@ -177,7 +177,7 @@ header > h4 {
   border-style: solid;
   border-width: 3px;
   /* z-index: -1; */
-  width: 185px;
+  width: 25vh;
   /* height: inherit; */
 }
 
