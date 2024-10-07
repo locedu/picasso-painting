@@ -7,13 +7,34 @@
   .main-container {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: .5em auto ;
+    box-sizing: border-box;
+    display:inline-table
+  }
+
+  #section-header {
+    order: 4;
+    border-radius: 0px 0px 15px 0px;
+  }
+
+  #section-image {
+    order: 3;
+    width: 100%;
+    height: 500px;
+  }
+  #section-copy {
+    order: 1;
+    width: 100%;
+  }
+  #section-form {
+    order: 2;
+    width: 100%;
   }
 }
 
 /* ***** TABLET ***** */
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 900px) {
   body {
     background-color: rgb(48, 50, 48);
   }
@@ -21,46 +42,76 @@
   .main-container {
     flex-direction: column;
     flex-wrap: wrap;
-    /* max-width: 750px; */
-    width: 500px;
+    /* width: 500px; */
+    width: 90%;
+    margin: 2em auto;
   }
-}
-#section-image {
-  /* display: inline-table; */
+
+  #section-header {
+    order: 1;
+  }
+  #section-image {
+    order: 2;
+    width: 100%;
+    height: 500px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #section-copy {
+    order: 3;
+    width: 100%;
+  }
+  #section-form {
+    order: 4;
+    width: 100%;
+  }
 }
 
 /* ***** DESKTOP ***** */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 901px) {
   body {
     background-color: darkcyan;
   }
 
-  /*   
-  main > img {
-    border-radius: 0px 0px 15px 0px;
-  } */
-
   .main-container {
     flex-direction: row;
-    /* flex-wrap: nowrap; */
-    /* align-items:flex-start; */
-    box-sizing: content-box;
-  }
-  #section-form {
-    background-color: black;
-    /* width: 500px !important; */
+    flex-wrap: wrap;
+    margin: 2em auto;
+    width: 95%;
   }
 
   #section-header {
+    order: 1;
     display: block;
     overflow: hidden;
+    width: 75%;
+    height: auto;
     /* width: 20%; */
+  }
+
+  #section-image {
+    order: 2;
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    display: inline-table;
+  }
+  #section-copy {
+    order: 3;
+    width: 30%;
+  }
+  #section-form {
+    order: 4;
+    background-color: black;
+    flex-grow: 1;
   }
 }
 
-/* COMMON */
+/* **** COMMON *****/
 .main-container {
-  margin: 8vh auto;
+  /* margin: 8vh auto; */
   padding: 2em;
   box-sizing: border-box;
   display: flex;
@@ -71,25 +122,22 @@
 #section-header {
   box-sizing: border-box;
   background-color: black;
-  border-radius: 15px 0px 0px 0px;
+  
   padding: 2em;
   align-self: start;
-  /* width: inherit; */
-  /* align-self:flex-start; */
 }
 
 header > h1 {
-  /* padding: 1em 1em 0 1em; */
   color: aliceblue;
 }
+
 header > h2 {
+  margin-top: 0.5em;
   color: rgb(81, 81, 82);
   font-family: "Times New Roman", Times, serif;
   font-size: xx-large;
   font-weight: 200;
   font-style: italic;
-  /* padding: 1em; */
-  margin-top: 0.5em;
 }
 
 header > h4 {
@@ -110,7 +158,7 @@ header > h4 {
 #section-image {
   overflow: hidden;
   background-image: url("img/picasso-blonde.png");
-  height: 70vmax;
+  /* height: 70vmax; */
   border-radius: 0px 0px 0px 0px;
 }
 
